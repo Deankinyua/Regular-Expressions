@@ -6,6 +6,7 @@ const patterns = {
   telephone: /^0(7|1)\d{8}$/i,
   password: /^[\w@-]{8,20}$/i,
   slug: /^[a-z\d-]{8,20}$/,
+  email: /^([a-z\d\.-]+)@([a-z\d]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
 };
 
 const validate = (field, regex) => {
@@ -38,3 +39,5 @@ inputs.forEach((input) => {
 // reg2 = regex.test(str); // false (lastIndex is taken into account with sticky flag)
 // console.log(`reg 2 ${reg2}`);
 // regex.lastIndex; // 0 (reset after match failure)
+
+// https://38.conference.ke/html5client/join?sessionToken=64lvkz4r4zvxuefz
